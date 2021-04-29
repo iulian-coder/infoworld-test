@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="card">
+    <div class="card-body">
+      <p class="card-title">Confirm consultation</p>
+      <p class="card-text">
+        Do you want to confirm the consultation for patient
+        {{ patient.firstName }} {{ patient.lastName }} ?
+      </p>
+      <button (click)="handleConfirm(id)" class="btn btn-primary mr-1">
+        Confirm
+      </button>
+      <a routerLink="/" class="btn btn-secondary">Cancel</a>
+    </div>
+  </div>
+</div>
